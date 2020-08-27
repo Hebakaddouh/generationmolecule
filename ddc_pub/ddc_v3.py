@@ -815,7 +815,8 @@ class DDC:
 
         # Temporary directory to extract the zipped information
         with tempfile.TemporaryDirectory() as dirpath:
-
+            
+            print (model_name)
             # Unzip the directory that contains the saved model(s)
             with zipfile.ZipFile(model_name + ".zip", "r") as zip_ref:
                 zip_ref.extractall(dirpath)
