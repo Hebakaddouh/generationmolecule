@@ -27,8 +27,7 @@ def images_to_vectors(images):
     return images.view(images.size(0), 784)
 
 def vectors_to_images(vectors):
-    print (vectors.size())
-    return vectors.view(vectors.size(0), 8, 8, 8)
+    return vectors.view(vectors.size(0), 1, 28, 28)
 
 # Noise
 def noise(size):
